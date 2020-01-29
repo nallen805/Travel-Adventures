@@ -1,0 +1,37 @@
+extends layout
+block content
+	.container
+		div.row
+			div.col
+				p.display-3 Contact Info
+				p.display-5
+					| Adventure Trails provides all of the information you will need related to the trip. 
+					| If you have any questions about your trip, or any feedback after your experience, please
+					| don't hesitate to let us know. 
+			div.col
+				p.display-3 Contact Form
+				p.display-5 
+					form(action="/contactSuccess" method='post').form-group
+						label Your Name:
+						br
+						input#contactname(type='text',
+							text=''
+							name='contact_name'
+							placeholder='Name'
+							required
+							).form-control
+						br
+						label Your Email:
+						br
+						input#contactemail(type='text',
+							text=''
+							name='contact_email'
+							placeholder='Email'
+							required
+							).form-control
+						br
+						label Questions/Feedback:
+						br
+						textarea(col='5', row='5', name='message' required).form-control
+						br
+						button(type='submit').btn.btn-primary.form-control.rounded Submit 

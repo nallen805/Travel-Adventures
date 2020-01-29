@@ -1,0 +1,12 @@
+extends layout 
+block content
+	.container
+		ul.list-group
+			li.list-group-item.list-group-item-info
+				a(href='/welcomeAdmin').nav-link.active View Bookings
+			li.list-group-item.list-group-item-info
+				a(href='/savedContact').nav-link View Messages
+		.row
+			.col
+				h6.text-right
+					a(href='/login') Logout

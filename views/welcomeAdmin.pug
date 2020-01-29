@@ -1,0 +1,25 @@
+extends layout
+block content
+	.container
+		.row#usertable
+			.col-10
+				table.table.table-striped.table-bordered
+					tr 
+						th Name
+						th Email
+						th Date
+						th Seats
+						th Package
+						each booking in booking_info
+							tr 
+								td #{booking.booking_name}
+								td #{booking.booking_email}
+								td #{booking.booking_date}
+								td #{booking.booking_seats}
+								td #{booking.package}
+			.col-2
+				a(href='/savedContact') View Messages
+				hr
+				a(href='/adminSuccess') Back
+				hr
+				a(href='/login') Logout 			

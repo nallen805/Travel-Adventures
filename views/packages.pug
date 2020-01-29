@@ -1,0 +1,91 @@
+extends layout	
+block content
+	div#center_content.container-fluid
+		table.table
+			tr
+				td 
+					img.packages(src='/images/LushMountain.jpg').img.rounded
+					div#LushMountain
+						form(action="/packages/lushmountain" method='get')
+							span LUSH MOUNTAIN 
+							br
+							|from 
+							br
+							|$6500.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More
+				td
+					img.packages(src='/images/RockyMountain.jpg').img.rounded
+					div#RockyMountain
+						form(action="/packages/rockymountain" method='get')
+							span ROCKY MOUNTAIN 
+							br 
+							|from 
+							br
+							|$8000.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More
+				td
+					img.packages(src='/images/NightVision.jpg').img.rounded
+					div#NightVision
+						form(action="/packages/nightvision" method='get')
+							span NIGHT VISION
+							br
+							|from 
+							br 
+							|$10000.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More
+			tr
+				td
+					img.packages(src='/images/SmokyMountain.jpg').img.rounded
+					form(action="/packages/smokymountain" method='get')
+						div#SmokyMountain
+							span SMOKY MOUNTAIN  
+							br
+							|from 
+							br
+							|$12000.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More
+					
+				td
+					img.packages(src='/images/Snowcapped.jpg').img.rounded
+					form(action="/packages/snowcapped" method='get')
+						div#Snowcapped
+							span SNOWCAPPED 
+							br
+							|from 
+							br
+							|$14000.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More
+				td
+					img.packages(src='/images/TreeView.jpg').img.rounded
+					form(action="/packages/treeview" method='get')
+						div#TreeView
+							span TREE VIEW 
+							br 
+							|from
+							br
+							|$16000.00
+							br
+							button(
+								type='submit'
+								name='Learn More'
+								).btn.btn-primary.rounded Learn More

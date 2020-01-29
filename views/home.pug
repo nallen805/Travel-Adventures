@@ -1,0 +1,20 @@
+extends layout
+block content
+	.container-fluid
+		img#bgimg(src='/images/MountainView.jpg').img-fluid
+		div#logo.display-4
+			|Adventure 
+			br
+			|Trails 
+			br
+			|Rocky Mountain 
+			br
+			|from
+			br 
+			|$7500.00	
+		div#formbtn
+			form(action='http://localhost:3004/packages')
+				button#button(
+					type='submit').btn.btn-primary.rounded Learn More
+		br 
+		a(href='/login') Admin Login

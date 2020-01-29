@@ -1,0 +1,46 @@
+extends layout
+block content
+	.container
+		form(action='/save' method='post').form-group
+			label Your Name:
+			input#name(type='text'
+				text=''
+				name='booking_name'
+				placeholder='Name'
+				required
+				).form-control
+			br
+			label Your Email Address:
+			input#email(type='email'
+				text=''
+				name='booking_email'
+				placeholder='Email'
+				required
+				).form-control
+			br
+			label Date:
+			input#date(type='date'
+				text=''
+				name='booking_date'
+				placeholder='mm/dd/yyyy'
+				required
+				).form-control
+			br 
+			label Seats:
+			input#seats(type='text'
+				text=''
+				name='booking_seats'
+				placeholder='Seats').form-control
+			br 
+			label(for='package_option') Packages:
+			- const package_options = [{value:'Lush Mountains'}, {value:'Rocky Mountains'}, {value:'Smoky Mountains'}, {value:'TreeView'}, {value:'Snowcapped'}, {value:'NightVision'}] 
+			select#package_option(name='package_option').form-control
+					each package_option in package_options
+						option(value=(package_option.value)).form-control #{package_option.value}
+			br
+			br
+			br
+			button(type='submit'
+				value='Submit').form-control.btn.btn-primary.rounded Submit
+		
+			

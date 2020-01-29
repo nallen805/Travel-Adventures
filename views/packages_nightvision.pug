@@ -1,0 +1,22 @@
+extends layout
+block content
+	.container
+		br
+		img(src='/images/NightShowcase.jpg').img.rounded.showcaseimages
+		p.showcasedescription.blockquote.text-justify
+			each package in package_info
+				span Location: #{package.package_location}
+				br 
+				span Altitude: #{package.package_altitude}
+				br
+				span Trek Duration: #{package.package_trek_duration}
+				br
+				span Best time to visit: #{package.package_best_visit}
+				br
+				span Difficulty Level: #{package.package_difficulty}
+				br
+				span Seats left: #{package.package_seats_left}
+				br 
+				p.description #{package.package_description}
+		.display-6
+			a(href='/packages') Back to packages

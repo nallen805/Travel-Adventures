@@ -1,0 +1,36 @@
+extends layout
+block append head
+	script(src='/javascripts/jquery-3.3.1.js')
+	script(src='/javascripts/bootstrap.js')
+block content
+	div#carouselPicsContainer.carousel.slide.container(data-ride='carousel')
+		div.carousel-inner
+			div.carousel-item.active
+				img.carouselPics.d-block.w-100(src='/images/LushShowcase2.jpg')
+				div.carousel-caption.display-4 Lush Mountain
+			div.carouselPics.carousel-item
+				img.d-block.w-100(src='/images/RockyShowcase2.jpg')
+				div.carousel-caption.display-4 Rocky Mountain
+			div.carouselPics.carousel-item
+				img.d-block.w-100(src='/images/NightShowcase2.jpg')
+				div.carousel-caption.display-4 Nightvision
+			div.carouselPics.carousel-item
+				img.d-block.w-100(src='/images/SmokyShowcase2.jpg')
+				div.carousel-caption.display-4 Smoky Mountain
+			div.carouselPics.carousel-item
+				img.d-block.w-100(src='/images/SnowcappedShowcase2.jpg')
+				div.carousel-caption.display-4 Snowcapped
+			div.carouselPics.carousel-item
+				img.d-block.w-100(src='/images/TreeviewShowcase2.jpg')
+				div.carousel-caption.display-4 TreeView
+			a.carousel-control-prev(href='#carouselPicsContainer'
+				role="button"
+				data-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.sr-only Previous
+			a.carousel-control-next(href='#carouselPicsContainer'
+				role="button"
+				data-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.sr-only Next
+	br

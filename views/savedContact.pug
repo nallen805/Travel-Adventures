@@ -1,0 +1,21 @@
+extends layout
+block content
+	.container
+		.row
+			.col-10#contact_table
+				table.table.table-striped.center
+					tr
+						th Contact Name
+						th Contact Email
+						th Messages
+						each cont in contact
+							tr
+								td #{cont.contact_name}
+								td #{cont.contact_email}
+								td #{cont.message}
+			.col-2
+				a(href='/welcomeAdmin') View Bookings
+				hr
+				a(href='/adminSuccess') Back
+				hr
+				a(href='/login') Logout
